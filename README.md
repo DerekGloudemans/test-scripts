@@ -9,3 +9,15 @@ Do we see a speedup quantizing from FP32 to FP16 on various GPUs for the Retinan
 | Quadro RTX 6000 | custom      | [30,3,112,112]  | 2500 | 43.00 | 40.76 | +42.68%  |
 | Quadro RTX 6000 | torchvision | [4,3,1920,1080] | 250  | N/A  | N/A | N/A |
 | Quadro RTX 6000 | torchvision | [30,3,112,112]  | 2500 | N/A  | N/A | N/A |
+| RTX A5000       | custom      | [4,3,1920,1080] | 250  |  | |  |
+| RTX A5000       | custom      | [30,3,112,112]  | 2500 |  |  |   |
+| RTX A5000       | torchvision | [4,3,1920,1080] | 250  | | | |
+| RTX A5000       | torchvision | [30,3,112,112]  | 2500 |  | |  |
+| RTX A6000       | custom      | [4,3,1920,1080] | 250  |  | | |
+| RTX A6000       | custom      | [30,3,112,112]  | 2500 |  | | |
+| RTX A6000       | torchvision | [4,3,1920,1080] | 250  |   | | |
+| RTX A6000       | torchvision | [30,3,112,112]  | 2500 |  |  |  |
+| A30             | custom      | [4,3,1920,1080] | 250  | | | |
+| A30             | custom      | [30,3,112,112]  | 2500 | | | |
+| A30             | torchvision | [4,3,1920,1080] | 250  |  | | |
+| A30             | torchvision | [30,3,112,112]  | 2500 |  | | |
