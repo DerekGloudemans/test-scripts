@@ -13,8 +13,8 @@ Do we see a speedup quantizing from FP32 to FP16 on various GPUs for the Retinan
 | RTX A5000       | custom      | [30,3,112,112]  | 2500 |  |  |   |
 | RTX A5000       | torchvision | [4,3,1920,1080] | 250  | | | |
 | RTX A5000       | torchvision | [30,3,112,112]  | 2500 |  | |  |
-| RTX A6000       | custom      | [4,3,1920,1080] | 250  |  | | |
-| RTX A6000       | custom      | [30,3,112,112]  | 2500 |  | | |
+| RTX A6000       | custom      | [4,3,1920,1080] | 250  | 5.11 | 9.27 | +81.14% |
+| RTX A6000       | custom      | [30,3,112,112]  | 2500 | 60.17 | 65.92 | +9.57% |
 | RTX A6000       | torchvision | [4,3,1920,1080] | 250  |   | | |
 | RTX A6000       | torchvision | [30,3,112,112]  | 2500 |  |  |  |
 | A30             | custom      | [4,3,1920,1080] | 250  | | | |
