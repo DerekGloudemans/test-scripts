@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
-from 
+import timestamp_utilities as tsu
 
 %## global settings
 coarse_rps = 1
