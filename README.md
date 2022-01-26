@@ -19,7 +19,7 @@ Do we see a speedup quantizing from FP32 to FP16 on various GPUs for the Retinan
 | RTX A6000       | torchvision | [30,3,112,112]  | 25 | 1.71 | 1.05 | -38.55% |
 | A30             | custom      | [4,3,1920,1080] | 250  | | | |
 | A30             | custom      | [30,3,112,112]  | 2500 | | | |
-| A30             | torchvision | [4,3,1920,1080] | 250  |  | | |
+| A30             | torchvision | [4,3,1920,1080] | 250  | 8.51  | 6.809 | -20.02% |
 | A30             | torchvision | [30,3,112,112]  | 2500 |  | | |
 
 At different batch sizes, on Quadro RTX6000:
