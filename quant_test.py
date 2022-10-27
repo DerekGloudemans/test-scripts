@@ -18,7 +18,7 @@ torch.cuda.empty_cache()
 dev = "cuda:0"
 
 b = 250
-for batch_size in [4]:
+for batch_size in [2]:
     size = [batch_size,3,1920,1080]
     
     device = torch.device(dev)
