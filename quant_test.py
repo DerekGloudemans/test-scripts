@@ -8,7 +8,7 @@ import numpy as np
 detector_path = os.path.join("./retinanet")
 sys.path.insert(0,detector_path)
 # filter and CNNs
-from retinanet.model import resnet50 
+from retinanet.model import resnet34 
 
 # use torchvision model instead
 #resnet50 = torchvision.models.detection.retinanet_resnet50_fpn
@@ -22,7 +22,7 @@ for batch_size in [4]:
     size = [batch_size,3,1920,1080]
     
     device = torch.device(dev)
-    model = resnet50(8)
+    model = resnet34(8)
     model = model.to(device)
     model.eval()
     model.training = False
@@ -45,7 +45,7 @@ for batch_size in [4]:
 
 
 
-    model = resnet50(8)
+    model = resnet34(8)
     device = torch.device(dev)
     model = model.to(device).half()
     
@@ -77,7 +77,7 @@ for batch_size in [30]:
     size = [batch_size,3,112,112]
     
     device = torch.device(dev)
-    model = resnet50(8)
+    model = resnet34(8)
     model = model.to(device)
     model.eval()
     model.training = False
@@ -96,7 +96,7 @@ for batch_size in [30]:
     del model
     
     
-    model = resnet50(8)
+    model = resnet34(8)
     device = torch.device(dev)
     model = model.to(device).half()
     model.eval()
