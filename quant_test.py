@@ -48,6 +48,11 @@ for batch_size in [4]:
     model = resnet50(8)
     device = torch.device(dev)
     model = model.to(device).half()
+    
+    for layer in model.modules():
+        if isinstance(layer, torch.nn.BatchNorm2d):
+            layer.float()
+            
     model.eval()
     model.training = False
     
